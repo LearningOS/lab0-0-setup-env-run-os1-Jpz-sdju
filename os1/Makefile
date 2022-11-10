@@ -31,6 +31,8 @@ kernel:
 clean:
 	@cargo clean
 
+$(info j sa :$(LOG))
+
 run: build
 	@qemu-system-riscv64 \
 		-machine virt \
