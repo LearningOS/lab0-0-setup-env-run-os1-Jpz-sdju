@@ -10,10 +10,10 @@ build: objcopy
 	cargo build --target $(COMPLIER) --release
 
 objdump:
-	rust-objdump -S $(BIN_PATH)
+	rust-objdump -S $(BIN_PATH)/os
 
 readobj:
-	rust-readobj -h $(BIN_PATH)
+	rust-readobj -h $(BIN_PATH)/os
 
 objcopy:
 	rust-objcopy --strip-all $(BIN_PATH)/os -O binary $(BIN_PATH)/os.bin
