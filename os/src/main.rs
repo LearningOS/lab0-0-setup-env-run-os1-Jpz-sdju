@@ -12,7 +12,7 @@ core::arch::global_asm!(include_str!("entry.asm"));
 pub fn rust_main() ->!{
     clear_bss();
     // loop{}
-    println!("wocannima");
+    println!("hhh");
     panic!("shut down");
 }
 
